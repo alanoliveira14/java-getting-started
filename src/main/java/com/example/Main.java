@@ -40,4 +40,9 @@ public class Main {
     return "alan";
   }
 
+  @RequestMapping("visitgoogle")
+  String google() {
+    return "visitgoogle";
+  }
+
 }
