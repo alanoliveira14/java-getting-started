@@ -1,0 +1,20 @@
+name: DemoNewCD
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: ls -lhia
+
+deploy-dev:
+    runs-on: ubuntu-latest
+    environment: 
+      name: dev
+      url: 'alan.com'
+    needs: build
+    steps:
+      - name: Run a one-line script
+        run: echo Deploy Dev
