@@ -9,7 +9,7 @@ jobs:
       - name: Run a one-line script
         run: ls -lhia
 
-deploy-dev:
+  deploy-dev:
     runs-on: ubuntu-latest
     environment: 
       name: DEV
